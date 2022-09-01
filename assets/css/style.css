@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  font-size: 3.8rem;
+}
+a {
+  position: absolute;
+  animation: anker 2s infinite;
+  text-decoration: none;
+}
+.down {
+  transform: rotate(180deg);
+}
+@keyframes anker {
+  0% {
+    top: 50vh;
+  }
+
+  50% {
+    top: 52vh;
+  }
+
+  100% {
+    top: 54vh;
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+.red {
+  background: rgb(217, 109, 108);
+}
+.yellow {
+  background: rgb(252, 211, 108);
+}
+.green {
+  background: rgb(162, 252, 191);
+}
